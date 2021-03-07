@@ -1,0 +1,132 @@
+/*СЕКЦИЯ КОМАНДЫ*/
+.section-team {
+  background: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.team-title {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+.team-list {
+  & .item {
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  & .item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.team-name {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.name-container {
+  background-color: var(--white);
+  padding-top: 30px;
+}
+.team-job {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--no-primary-color);
+}
+.team-ul-svg {
+  display: inline-flex;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.team-list-svg {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--nav-color);
+  }
+  &:hover .team-icon {
+    fill: var(--white);
+  }
+  &:focus {
+    background-color: var(--nav-color);
+  }
+  &:focus .team-icon {
+    fill: var(--white);
+  }
+}
+
+/*СЕКЦИЯ КОМАНДЫ*/
+
+@media screen and (min-width: 768px) {
+  img {
+    width: 354px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-list .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    height: 527px;
+  }
+  .team-list .item:nth-child(n + 2) {
+    margin-bottom: 0;
+  }
+  .team-list .item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/*Стили команды*/
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+  }
+  img {
+    width: 270px;
+    height: 260px;
+  }
+  .team-list {
+    & .item {
+      height: 428px;
+    }
+    & .item:nth-child(2n) {
+      margin-right: 30px;
+    }
+    & .item:last-child {
+      margin-right: 0;
+    }
+  }
+}

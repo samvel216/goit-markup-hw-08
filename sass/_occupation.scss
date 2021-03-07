@@ -1,0 +1,56 @@
+@media screen and (min-width: 1200px) {
+  /*Стили occupation*/
+  .occupation-div-img {
+    width: 370px;
+  }
+  img {
+    display: block;
+    min-width: 100%;
+  }
+  .section-occupation {
+    padding-bottom: 94px;
+    display: block;
+  }
+  .occupation-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .occupation-list {
+    display: flex;
+
+    & .item {
+      margin-right: 30px;
+    }
+    & .item:last-child {
+      margin: 0px;
+    }
+  }
+
+  .occupation-div-img {
+    position: relative;
+  }
+
+  .occupation-p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--white);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

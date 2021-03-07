@@ -1,0 +1,137 @@
+.clients-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.clients-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.clients-li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+.icon1 {
+  width: 44px;
+  height: 49px;
+}
+.icon2 {
+  width: 40px;
+  height: 52px;
+}
+.icon3 {
+  width: 41px;
+  height: 43px;
+}
+.icon4 {
+  width: 80px;
+  height: 42px;
+}
+.icon5 {
+  width: 59px;
+  height: 47px;
+}
+.icon6 {
+  width: 88px;
+  height: 45px;
+}
+.clients-link {
+  width: 210px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  display: flex;
+
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border-color: var(--nav-color);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .clients-icon {
+    fill: var(--nav-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus {
+    border-color: var(--nav-color);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus .clients-icon {
+    fill: var(--nav-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+
+/*СТИЛИ clients*/
+
+@media screen and (min-width: 768px) {
+  .clients-li {
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+
+  .clients-link {
+    width: 226px;
+  }
+}
+
+/*Стили клиентов*/
+
+@media screen and (min-width: 1200px) {
+  .clients-li {
+    margin-bottom: 0;
+
+    &:nth-child(3n + 3) {
+      margin-right: 30px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .clients-link {
+    width: 170px;
+  }
+
+  .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
